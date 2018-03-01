@@ -1,11 +1,10 @@
 import React, { Fragment } from 'react'
-import Nav from "./nav";
+import Head from "./head";
 
-const Layout = (props) => (
+const Layout = (props) =>
   <Fragment>
-    <Nav />
+    <Head />
     {props.children}
-  </Fragment>
-);
+  </Fragment>;
 
 export default Layout
