@@ -35,7 +35,7 @@ export default class Stage extends Component {
   render() {
     return (
       <Layout>
-        {this.state.articles.map(article => <Teaser article={article} />)}
+        {this.state.articles.map((article, key) => <Teaser key={key} article={article} />)}
       </Layout>
     );
   }
