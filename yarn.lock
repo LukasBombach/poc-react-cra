@@ -1751,13 +1751,6 @@ data-api@LukasBombach/bild-poc-lean-api:
   version "1.0.0"
   resolved "https://codeload.github.com/LukasBombach/bild-poc-lean-api/tar.gz/0ba9f2723d774f4856e02d35b716afd2d496aa08"
   dependencies:
-    es6-promise "4.2.4"
-    isomorphic-fetch "2.2.1"
-
-data-api@LukasBombach/bild-poc-lean-api#isomorphic-fetch:
-  version "1.0.0"
-  resolved "https://codeload.github.com/LukasBombach/bild-poc-lean-api/tar.gz/aca113cd9e873ffb2eb8a5a0596b45331931516f"
-  dependencies:
     express "4.16.2"
     node-fetch "2.0.0"
 
@@ -5018,7 +5011,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
