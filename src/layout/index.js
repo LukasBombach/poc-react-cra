@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react'
-import Head from "./head";
+import React from 'react'
+import Head from './head';
+import styles from './index.module.css';
 
 const Layout = (props) =>
-  <Fragment>
+  <div className={styles.container}>
     <Head />
     {props.children}
-  </Fragment>;
+  </div>;
 
 export default Layout

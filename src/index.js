@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './app';
 import registerServiceWorker from './registerServiceWorker';
+import styles from './app.module.css';
 
 ReactDOM.render((
   <BrowserRouter>
-    <App />
+    <App className={styles.app} />
   </BrowserRouter>
 ), document.getElementById('root'));
 
