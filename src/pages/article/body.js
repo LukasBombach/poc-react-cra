@@ -8,6 +8,10 @@ export default class Body extends Component {
     default: Paragraph,
   };
 
+  static defaultProps = {
+    article: {},
+  };
+
   static getBlockTag(block) {
     return Body.contentMap[block.type] || Body.contentMap.default;
   }

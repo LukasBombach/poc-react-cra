@@ -1,14 +1,43 @@
-import React from 'react'
-import { getArticle, getStage } from 'data-api';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types';
+import { getStage } from 'data-api';
+import Layout from "../../layout";
+import Teaser from "./teaser";
 
-const Page = ({ stage }) =>
-  <pre>
-    {JSON.stringify(stage, null, 2)}
-  </pre>;
+export default class Stage extends Component {
 
-Page.getInitialProps = async () => {
-  const stage = await getStage(['5a93e0723195eb0001099401', '5a93ff813195eb0001099438','5a93e0723195eb0001099411']);
-  return { stage };
+  static contextTypes = {
+    platform: PropTypes.string
+  };
+
+  static defaultProps = {
+    platform: 'Web',
+  };
+
+  static childContextTypes = {
+    platform: PropTypes.string
+  };
+
+  state = {
+    articles: [],
+  };
+
+  async componentDidMount() {
+    const ids = ['5a93e0723195eb0001099411', '5a93e0723195eb0001099411', '5a93e0723195eb0001099411'];
+    const articles = await getStage(ids);
+    this.setState({ articles });
+  }
+
+  getChildContext() {
+    return { platform: this.props.platform };
+  }
+
+  render() {
+    return (
+      <Layout>
+        {this.state.articles.map(article => <Teaser article={article} />)}
+      </Layout>
+    );
+  }
+
 };
-
-export default Page
