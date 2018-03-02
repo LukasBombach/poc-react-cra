@@ -4,7 +4,7 @@ import logo from '../assets/images/layout/logo.png';
 
 const Head = () =>
   <Fragment>
-    <img src={logo} alt="Bild Logo"/>
+    <a href="/"><img src={logo} alt="Bild Logo"/></a>
     <Nav />
   </Fragment>;
 

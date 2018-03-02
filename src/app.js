@@ -7,8 +7,8 @@ export default class App extends Component {
   render() {
     return (
       <Fragment>
-        <Route path="/" component={Stage}/>
-        <Route path="/article/:id" component={Article}/>
+        <Route exact path="/" component={Stage}/>
+        <Route exact path="/article/:id" component={Article}/>
       </Fragment>
     );
   }
