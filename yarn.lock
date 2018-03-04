@@ -188,7 +188,7 @@ append-transform@^0.4.0:
   dependencies:
     default-require-extensions "^1.0.0"
 
-appendhtml@^1.0.1:
+appendhtml@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/appendhtml/-/appendhtml-1.0.1.tgz#23f57fef55ee5141b4a303d769ebb56bd66c8023"
 
@@ -2151,7 +2151,7 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-custom-react-scripts@^0.2.1:
+custom-react-scripts@0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/custom-react-scripts/-/custom-react-scripts-0.2.1.tgz#4346a08ab01d2e7f54d1b92d5080b0ea4dd0ea95"
   dependencies:
@@ -6122,7 +6122,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.1:
+prop-types@15.6.1, prop-types@^15.5.4, prop-types@^15.6.0:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
