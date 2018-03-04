@@ -25,8 +25,7 @@ export default class Article extends Component {
   };
 
   async componentDidMount() {
-    const article = await getArticle(this.props.match.params.id); // '5a93e0723195eb0001099411'
-    console.log(article);
+    const article = await getArticle(this.props.match.params.id);
     this.setState({ article });
   }
 
