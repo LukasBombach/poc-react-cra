@@ -1,6 +1,6 @@
 import React from 'react';
 import Content from '../content';
-import styles from './paragraph.module.css';
+import styles from './paragraph.module.scss';
 
 export default class Paragraph extends Content {
 

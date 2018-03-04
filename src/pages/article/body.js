@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Paragraph from "./content/paragraph";
+import styles from './body.module.scss';
 
 export default class Body extends Component {
 
@@ -27,7 +28,7 @@ export default class Body extends Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.body}>
         { this.getBody().map((block, key) => Body.renderBlock(block, key)) }
       </div>
     );
