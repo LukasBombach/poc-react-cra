@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import { getStage } from 'data-api';
+// import { getStage } from 'data-api';
+import { getStage } from '../../__mocks';
 import Layout from "../../layout";
 import Teaser from "./teaser";
 
