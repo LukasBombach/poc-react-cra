@@ -2,8 +2,7 @@
 @import "../../assets/fonts/gotham/GothamHTF-BookCondensed";
 
 .heading {
-  font-family: "Gotham HTF", sans-serif;
-  font-weight: bold;
+  font: bold 21px/1.7em "Gotham HTF", sans-serif;
 }
 
 .img {
@@ -12,5 +11,5 @@
 }
 
 .teaser {
-  font-family: "Gotham HTF", sans-serif;
+  font: 21px/1.7em "Gotham HTF", sans-serif;
 }

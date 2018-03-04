@@ -1,11 +1,10 @@
-import React, { Fragment } from 'react'
-import Nav from "./nav";
+import React from 'react'
+import styles from './head.module.scss';
 import logo from '../assets/images/layout/logo.png';
 
 const Head = () =>
-  <Fragment>
+  <header className={styles.header}>
     <a href="/"><img src={logo} alt="Bild Logo"/></a>
-    <Nav />
-  </Fragment>;
+  </header>;
 
 export default Head
