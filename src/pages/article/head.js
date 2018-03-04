@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react';
-import Content from "./content";
+import React, { Component, Fragment } from 'react';
+import {rendersPlatforms} from "../../platforms/index";
 import styles from './head.module.scss';
 
-export default class Head extends Content {
+@rendersPlatforms
+export default class Head extends Component {
 
   renderWeb() {
     return (
