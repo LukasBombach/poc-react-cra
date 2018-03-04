@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import appendHtml from 'appendhtml';
 import Paragraph from "./content/paragraph";
 import styles from './body.module.scss';
 
@@ -26,10 +27,17 @@ export default class Body extends Component {
     return this.props.article.body || [];
   }
 
+  async componentDidMount() {
+    const response = await fetch('https://www.welt.de/oembed?url=https://twitter.com/BILD/status/965993478273622016');
+    const json = await response.json();
+    await appendHtml(json.html, this.tweetContainer);
+  }
+
   render() {
     return (
       <div className={styles.body}>
         { this.getBody().map((block, key) => Body.renderBlock(block, key)) }
+        <div ref={container => this.tweetContainer = container} />
       </div>
     );
   }

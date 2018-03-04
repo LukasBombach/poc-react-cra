@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "custom-react-scripts": "^0.2.1",
+    "appendhtml": "1.0.1",
+    "custom-react-scripts": "0.2.1",
     "data-api": "LukasBombach/bild-poc-lean-api",
     "react": "16.2.0",
     "react-dom": "16.2.0",
@@ -16,6 +17,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "prop-types": "^15.6.1"
+    "prop-types": "15.6.1"
   }
 }
