@@ -5,6 +5,8 @@ import { getStage } from '../../__mocks';
 import Layout from "../../layout";
 import Teaser from "./teaser";
 
+// import "../../themes/red.css";
+
 export default class Stage extends Component {
 
   static contextTypes = {
