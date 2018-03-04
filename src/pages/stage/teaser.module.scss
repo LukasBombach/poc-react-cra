@@ -1,15 +1,29 @@
 @import "../../assets/fonts/gotham/GothamHTF-BoldCondensed";
 @import "../../assets/fonts/gotham/GothamHTF-BookCondensed";
 
-.heading {
-  font: bold 21px/1.7em "Gotham HTF", sans-serif;
-}
-
-.img {
-  max-width: 100%;
-  width: 100%;
-}
-
 .teaser {
-  font: 21px/1.7em "Gotham HTF", sans-serif;
+
+  background: center center;
+  background-size: cover;
+
+  padding: 40px;
+  margin: 10px 0;
+  min-height: 400px;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    align-self: flex-end;
+    color: #fff;
+    font: bold 21px/.93em "Gotham HTF", sans-serif;
+    font-size: 6.25rem;
+    text-align: center;
+    text-shadow: 1px 2px 8px rgba(0,0,0,.6);
+  }
+
 }
+
