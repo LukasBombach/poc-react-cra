@@ -8,7 +8,7 @@ export default class App extends Component {
     return (
       <Fragment>
         <Route exact path="/" component={Stage}/>
-        <Route exact path="/article/:id" component={Article}/>
+        <Route exact path="/article/:id/:platform?" component={Article}/>
       </Fragment>
     );
   }

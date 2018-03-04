@@ -12,13 +12,11 @@ export default class Article extends Component {
     platform: PropTypes.string
   };
 
-  static defaultProps = {
-    platform: 'Web',
-  };
-
   static childContextTypes = {
     platform: PropTypes.string
   };
+
+  static defaultPlatform = 'web';
 
   state = {
     article: {},
@@ -30,7 +28,8 @@ export default class Article extends Component {
   }
 
   getChildContext() {
-    return { platform: this.props.platform };
+    const platform = this.props.match.params.platform || Article.defaultPlatform;
+    return { platform };
   }
 
   render() {

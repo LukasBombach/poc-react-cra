@@ -5,11 +5,11 @@ import styles from './paragraph.module.scss';
 export default class Paragraph extends Content {
 
   renderWeb() {
-    return <p className={styles.paragraph}>{this.props.block.text}</p>
+    return <p className={styles.paragraph}>{this.props.block.text}</p>;
   }
 
   renderAmp() {
-    return <p>{this.props.block.text}</p>
+    return <p>{this.props.block.text}</p>;
   }
 
 }
